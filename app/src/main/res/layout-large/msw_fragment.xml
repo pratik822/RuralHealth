@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.00"
+                        android:text="Date "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="24dp" />
+
+                    <EditText
+                        android:id="@+id/dateTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1.40"
+                        android:background="@drawable/edittext_shape"
+                        android:hint="Select Date"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/bw_light_black"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:id="@+id/dateIco"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/calendar" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.57"
+                    android:text="Name of MSW "
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/tv_MSW"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1.40"
+                    android:background="@drawable/edittext_shape"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Select MSW"
+                    android:textColorHint="@color/bw_light_black"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.57"
+                    android:text="Villages Attented "
+                    android:textSize="24dp" />
+
+                <LinearLayout
+                    android:id="@+id/llVillage"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1.40"
+                    android:background="@drawable/edittext_shape"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/tv_Villages"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.80"
+                        android:background="@drawable/edittext_shape"
+                        android:gravity="center_vertical"
+                        android:hint="Select Village/Pada"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/bw_light_black"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_Village"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.20"
+                        android:background="@mipmap/dropdown_arrow" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="0.02">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sessions Taken "
+                    android:textSize="24dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.02"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.01"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/cb_activity_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="false"
+                            android:padding="5dp"
+                            android:text="Hand Hygiene"
+                            android:textColorHint="@color/gray"
+
+                            android:textSize="26sp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_activity_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="false"
+                            android:padding="5dp"
+                            android:text="Sex Education"
+                            android:textColorHint="@color/gray"
+
+                            android:textSize="26sp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_activity_three"
+                            android:layout_width="203dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="false"
+                            android:padding="5dp"
+                            android:text="Activity3"
+                            android:textColorHint="@color/gray"
+                            android:textSize="26sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.01"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/cb_activity_four"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="false"
+                            android:padding="5dp"
+                            android:text="Activity4"
+                            android:textColorHint="@color/gray"
+                            android:textSize="26sp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_activity_five"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="false"
+                            android:padding="5dp"
+                            android:text="Activity5"
+                            android:textColorHint="@color/gray"
+                            android:textSize="26sp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_activity_six"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="false"
+                            android:padding="5dp"
+                            android:text="Activity6"
+                            android:textColorHint="@color/gray"
+                            android:textSize="26sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.57"
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/edtother"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1.40"
+                    android:background="@drawable/edittext_shape"
+                    android:hint="Other Option"
+                    android:paddingLeft="15dp"
+                    android:textColorHint="@color/bw_light_black"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.80"
+                    android:text="Number of People + School Children Attendent"
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/edtpeople"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.15"
+                    android:background="@drawable/edittext_shape"
+                    android:hint="Enter People Attended"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/bw_light_black"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <Switch
+                    android:id="@+id/sw_teacher_present"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="0.60"
+                    android:checked="false"
+                    android:text="Teacher Present?"
+                    android:textSize="24dp" />
+
+                <Switch
+                    android:id="@+id/sw_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="0.60"
+                    android:checked="false"
+                    android:drawableTint="@color/gray"
+                    android:text="Water Filter Present?"
+                    android:textSize="24dp" />
+
+                <Switch
+                    android:id="@+id/sw_dispenser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="0.60"
+                    android:checked="false"
+                    android:drawableTint="@color/gray"
+                    android:paddingBottom="5dp"
+                    android:text="Hand Wash Dispensor Present?"
+                    android:textSize="24dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:text="Support Required "
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/edtsupport"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1.40"
+                    android:background="@drawable/edittext_shape"
+                    android:hint="Provide support reuired"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/bw_light_black"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:text="Remark "
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/edtremark"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1.40"
+                    android:background="@drawable/edittext_shape"
+                    android:hint="enter remark"
+                    android:maxLines="5"
+                    android:paddingLeft="10dp"
+                    android:singleLine="false"
+                    android:textColorHint="@color/bw_light_black"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:text="Any house visit done "
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/edtvisit"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1.40"
+                    android:background="@drawable/edittext_shape"
+                    android:hint="Enter House Visit Done"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/bw_light_black"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnsubmit"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@color/blue"
+                android:paddingBottom="10dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingTop="10dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnMSWdistribution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/blue"
+                android:paddingBottom="10dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingTop="10dp"
+                android:text="MSW Distribution"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

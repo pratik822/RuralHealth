@@ -1,0 +1,24 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_text_selector">
+    <!-- Image display in background in select state -->
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/edit_text_focused">
+    </item>
+
+    <!-- Image display in background in select state -->
+    <item
+        android:state_enabled="true"
+        android:state_focused="true"
+        android:drawable="@drawable/edit_text_focused">
+    </item>
+
+    <!-- Default state -->
+    <item android:state_enabled="true"
+        android:drawable="@drawable/edit_text_default">
+    </item>
+
+    <item android:state_enabled="false"
+        android:drawable="@drawable/edit_text_default">
+    </item>
+</selector>

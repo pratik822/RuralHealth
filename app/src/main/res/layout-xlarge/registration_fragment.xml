@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_yellow_shape"
+            android:padding="6dp">
+
+            <Button
+                android:id="@+id/btnNew"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="New"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnFollowUp"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Follow-Up"
+                android:textAllCaps="false"
+                android:textColor="@color/bw_dark_black"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cardView"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/searchLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/layout_circular_shape"
+            android:orientation="horizontal"
+            android:paddingBottom="50dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="20dp"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/patient_name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="22sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/searchByName"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_shape"
+                    android:hint="Search By Name No"
+                    android:paddingLeft="6dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/bw_light_black"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SWP No "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="22sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/edt_search_swp"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_shape"
+                    android:hint="Search By SWP No"
+                    android:paddingRight="6dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/bw_light_black"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_cam"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:paddingTop="4dp"
+            android:src="@drawable/profile_pic" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.00"
+                        android:text="Date "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="24dp" />
+
+                    <EditText
+                        android:id="@+id/dateTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1.40"
+                        android:background="@drawable/edittext_shape"
+                        android:hint="Select Date"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/bw_light_black"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:id="@+id/dateIco"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/calendar" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_swp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:text="SWP No "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="24dp" />
+
+                    <EditText
+                        android:id="@+id/edt_swpno"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/edittext_shape"
+                        android:hint="SWP No"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/bw_light_black"
+                        android:textSize="22sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="0.89"
+                        android:text="@string/patient_name"
+                        android:textSize="24dp" />
+
+                    <EditText
+                        android:id="@+id/PationtFirstnameTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_shape"
+                        android:hint="Enter First Name"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/bw_light_black"
+                        android:textSize="22sp" />
+
+                    <EditText
+                        android:id="@+id/PationtMiddelnameTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_shape"
+                        android:hint="Enter middlel Name"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/bw_light_black"
+                        android:textSize="22sp" />
+
+
+                    <EditText
+                        android:id="@+id/PationtLastnameTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_shape"
+                        android:hint="Enter Last Name"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/bw_light_black"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.59"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="24dp" />
+
+                    <Spinner
+                        android:id="@+id/spin_month"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.50"
+                        android:background="@drawable/edittext_shape"
+                        android:hint="Enter Age"
+                        android:visibility="gone"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/bw_light_black"
+                        android:textSize="22sp" />
+
+                    <Spinner
+                        android:id="@+id/spin_year"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.50"
+                        android:visibility="gone"
+                        android:background="@drawable/edittext_shape"
+                        android:hint="Enter Age"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/bw_light_black"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.59"
+                        android:text="Age"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="24dp" />
+
+                    <EditText
+                        android:id="@+id/ageTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.50"
+                        android:background="@drawable/edittext_shape"
+                        android:hint="Enter Age"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/bw_light_black"
+                        android:textSize="22sp" />
+                    <EditText
+                        android:id="@+id/ageYear"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.50"
+                        android:background="@drawable/edittext_shape"
+                        android:hint="Enter Month"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/bw_light_black"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="226dp"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="24dp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/maleBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.52"
+                            android:buttonTint="@color/gray"
+                            android:text="Male"
+                            android:textSize="22sp" />
+
+                        <RadioButton
+                            android:id="@+id/FemaleBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/gray"
+                            android:text="Female"
+                            android:textSize="22sp" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.59"
+                        android:text="Village/Pada"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="24dp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/llVillage"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1.26"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/tvVillages"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.99"
+                            android:background="@drawable/edittext_shape"
+                            android:gravity="center_vertical"
+                            android:hint="Select Village/Pada"
+                            android:paddingLeft="10dp"
+                            android:textSize="22sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_Village"
+                            android:layout_width="65dp"
+                            android:layout_height="match_parent"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.60"
+                        android:text="Height"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="24dp" />
+
+                    <EditText
+                        android:id="@+id/heightTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="0.60"
+                        android:background="@drawable/edittext_shape"
+                        android:hint="Enter Your Height"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/bw_light_black"
+                        android:textSize="22sp"></EditText>
+
+                    <TextView
+                        android:id="@+id/tvheightunit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="0.60"
+                        android:paddingLeft="15dp"
+                        android:text="cm"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="24dp" />
+
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.60"
+                        android:text="Weight"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="24dp" />
+
+                    <EditText
+                        android:id="@+id/weightTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="0.60"
+                        android:background="@drawable/edittext_shape"
+                        android:hint="Enter Your Weight"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/bw_light_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/tvweighttunit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="0.60"
+                        android:paddingLeft="15dp"
+                        android:text="kg"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.98"
+                        android:text="Blood Pressure "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="24dp" />
+
+                    <EditText
+                        android:id="@+id/systolicTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="0.80"
+                        android:background="@drawable/edittext_shape"
+                        android:hint="Systolic "
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/bw_light_black"
+                        android:textSize="22sp"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/diastolicTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="0.80"
+                        android:background="@drawable/edittext_shape"
+                        android:hint="Diastolic "
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/bw_light_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/tvbloodunit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="0.60"
+                        android:paddingLeft="15dp"
+                        android:text="mm/Hg"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.63"
+                        android:text="Contact No"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="24dp" />
+
+                    <EditText
+                        android:id="@+id/contactTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="0.95"
+                        android:background="@drawable/edittext_shape"
+                        android:hint="Enter Contact No"
+                        android:inputType="phone|number"
+                        android:maxLength="11"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/bw_light_black"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="24dp" />
+
+                    <RadioGroup
+                        android:id="@+id/anc_radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/ancBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.52"
+                            android:buttonTint="@color/gray"
+                            android:text="ANC"
+                            android:textSize="22sp" />
+
+                        <RadioButton
+                            android:id="@+id/pncBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/gray"
+                            android:text="PNC"
+                            android:textSize="22sp" />
+                    </RadioGroup>
+                    />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ancView"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="20dp"
+                        android:text="Obstetrics history"
+                        android:textSize="26dp"
+                        android:textStyle="bold" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+
+                        <Spinner
+                            android:id="@+id/spin_G"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        </Spinner>
+
+                        <Spinner
+                            android:id="@+id/spin_P"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        </Spinner>
+
+                        <Spinner
+                            android:id="@+id/spin_L"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        </Spinner>
+
+                        <Spinner
+                            android:id="@+id/spin_D"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        </Spinner>
+
+                        <Spinner
+                            android:id="@+id/spin_A"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        </Spinner>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <Spinner
+                            android:id="@+id/spin_F"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        </Spinner>
+
+                        <Spinner
+                            android:id="@+id/spin_T"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        </Spinner>
+
+                        <Spinner
+                            android:id="@+id/spin_N"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        </Spinner>
+
+                        <Spinner
+                            android:id="@+id/spin_Ds"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        </Spinner>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lmps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.59"
+                            android:text="L.M.P"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="24dp" />
+
+                        <EditText
+                            android:id="@+id/edt_lmp"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="0.50"
+                            android:background="@drawable/edittext_shape"
+                            android:hint="Enter L.M.P"
+                            android:inputType="number"
+                            android:paddingLeft="10dp"
+                            android:textColorHint="@color/bw_light_black"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/edds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.59"
+                            android:text="E.D.D"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="24dp" />
+
+                        <EditText
+                            android:id="@+id/edt_edd"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="0.50"
+                            android:background="@drawable/edittext_shape"
+                            android:hint="Enter E.D.D"
+                            android:inputType="number"
+                            android:paddingLeft="10dp"
+                            android:textColorHint="@color/bw_light_black"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="20dp"
+                        android:text="Complaints"
+                        android:textSize="26dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/ck_bleeding"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Bleeding p.v"
+                            android:textSize="22sp" />
+
+                        <CheckBox
+                            android:id="@+id/ck_leaking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Leaking p.v"
+                            android:textSize="22sp" />
+
+                        <CheckBox
+                            android:id="@+id/ck_pain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Pain/ absent movements"
+                            android:textSize="22sp" />
+
+                        <EditText
+                            android:id="@+id/edt_other"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="14dp"
+                            android:background="@drawable/edittext_shape"
+                            android:hint="Others"
+                            android:paddingLeft="10dp"
+                            android:textColorHint="@color/bw_light_black"
+                            android:textSize="22sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="20dp"
+                        android:text="Examination"
+                        android:textSize="26dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/utrinlayout"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/ck_Uterine"
+                                android:layout_width="wrap_content"
+                                android:textSize="22sp"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="4dp"
+                                android:text="Utrine Size"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:id="@+id/edt_sfh"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:background="@drawable/edittext_shape"
+                                android:hint="SFH/cm"
+                                android:inputType="number"
+                                android:paddingLeft="10dp"
+                                android:textColorHint="@color/bw_light_black"
+                                android:textSize="22sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Paslayout"
+                            android:layout_marginTop="10dp"
+                            android:gravity="left"
+                            android:weightSum="3"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/ck_pa"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.60"
+                                android:text="P.A"
+                                android:textSize="22sp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:id="@+id/edt_pa_Ut"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="60dp"
+                                android:background="@drawable/edittext_shape"
+                                android:hint="Ut"
+                                android:inputType="number"
+                                android:paddingLeft="10dp"
+                                android:textColorHint="@color/bw_light_black"
+                                android:textSize="22sp" />
+
+                            <EditText
+                                android:id="@+id/edt_pa_weeks"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="60dp"
+                                android:background="@drawable/edittext_shape"
+                                android:hint="weeks"
+                                android:inputType="number"
+                                android:paddingLeft="10dp"
+                                android:textColorHint="@color/bw_light_black"
+                                android:textSize="22sp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/fhslayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/ck_fhs"
+                                android:layout_width="wrap_content"
+                                android:textSize="22sp"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="4dp"
+                                android:text="FHS"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:id="@+id/edt_fhs"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:background="@drawable/edittext_shape"
+                                android:hint="FHS/min"
+                                android:inputType="number"
+                                android:paddingLeft="10dp"
+                                android:textColorHint="@color/bw_light_black"
+                                android:textSize="22sp" />
+
+
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/edt_complaint"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/edittext_shape"
+                            android:visibility="gone"
+                            android:hint="Complaints"
+                            />
+                        <CheckBox
+                            android:id="@+id/ck_rs"
+                            android:layout_width="wrap_content"
+                            android:textSize="22sp"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="4dp"
+                            android:layout_marginTop="5dp"
+                            android:text="R.S"
+                            android:layout_height="wrap_content" />
+                        <CheckBox
+                            android:id="@+id/ck_cvs"
+                            android:layout_width="wrap_content"
+                            android:textSize="22sp"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="4dp"
+                            android:layout_marginTop="5dp"
+                            android:text="C.V.S"
+                            android:layout_height="wrap_content" />
+                        <CheckBox
+                            android:id="@+id/ck_cns"
+                            android:layout_width="wrap_content"
+                            android:textSize="22sp"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="4dp"
+                            android:layout_marginTop="5dp"
+                            android:text="C.N.S"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/submitBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/blue"
+                        android:hint="Submit"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp"
+                        android:paddingTop="10dp"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+
+                    <Button
+                        android:id="@+id/btnReset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/bw_light_black"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp"
+                        android:paddingTop="10dp"
+                        android:text="Reset"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

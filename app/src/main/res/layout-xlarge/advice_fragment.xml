@@ -1,0 +1,1352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fiveteen_dp"
+            android:layout_marginRight="@dimen/fiveteen_dp"
+            android:layout_marginTop="@dimen/fiveteen_dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.60"
+                    android:text="Date "
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1.40"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/dateTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_shape"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Date"
+                        android:paddingLeft="10dp"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:id="@+id/ivDateIcon"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/calendar" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvSWPNo_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:text="SWP No "
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoSWPNo"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/sixty_dp"
+                    android:layout_weight="1.40"
+                    android:background="@drawable/edittext_shape"
+                    android:hint="Auto pickup from registration"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:textSize="@dimen/twenty_two_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvPatientNameTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:text="Patient Name"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoPatientName"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/sixty_dp"
+                    android:layout_weight="1.40"
+                    android:background="@drawable/edittext_shape"
+                    android:hint="Auto pickup from registration"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:textSize="@dimen/twenty_two_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvChief_Complaints"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:text="Chief Complaints"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <EditText
+                    android:id="@+id/edtChief_Complaint"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/sixty_dp"
+                    android:layout_weight="1.40"
+                    android:background="@drawable/edittext_shape"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:textSize="@dimen/twenty_two_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tinestigation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:text="Investigation"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <EditText
+                    android:id="@+id/edtvestigation"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/sixty_dp"
+                    android:layout_weight="1.40"
+                    android:background="@drawable/edittext_shape"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:hint="Select Investigation Type"
+                    android:textSize="@dimen/twenty_two_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/investigationreport"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:text="Investigation Report"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <EditText
+                    android:id="@+id/edt_investigationreport"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/sixty_dp"
+                    android:layout_weight="1.40"
+                    android:hint="Provide Investigation report"
+                    android:background="@drawable/edittext_shape"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:textSize="@dimen/twenty_two_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvSystem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.60"
+                    android:text="System"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.40"
+                    android:background="@drawable/edittext_shape">
+
+                    <EditText
+                        android:id="@+id/edt_system"
+                        android:layout_width="match_parent"
+                        android:hint="Select System"
+                        android:layout_height="@dimen/sixty_dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvTreamentAdviced"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:text="Treatment Adviced"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <EditText
+                    android:id="@+id/edtTreamentAdviced"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/sixty_dp"
+                    android:layout_weight="1.40"
+                    android:background="@drawable/edittext_shape"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:hint="Enter Treatment Advice"
+                    android:textSize="@dimen/twenty_two_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvMedicationPrescribed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.60"
+                    android:text="Medication Prescribed"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.40"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llMedicine1"
+                        android:layout_width="200dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/edtMedicine1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.50"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:text="Medicine one"
+                            android:hint="Medicine "
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivMedicine1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llFrequency1"
+                        android:layout_width="200dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tvFrequency1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.50"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="Frequency "
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivFrequency1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llDays1"
+                        android:layout_width="100dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tvDays1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="0"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivDays1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.40"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llMedicine2"
+                        android:layout_width="200dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/edtMedicine2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.50"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:text="Medicine two"
+                            android:hint="Medicine "
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivMedicine2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llFrequency2"
+                        android:layout_width="200dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tvFrequency2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.50"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="Frequency "
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivFrequency2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llDays2"
+                        android:layout_width="100dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tvDays2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="0"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivDays2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.40"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llMedicine3"
+                        android:layout_width="200dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/edtMedicine3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.50"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="Medicine "
+                            android:text="Medicine three"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivMedicine3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llFrequency3"
+                        android:layout_width="200dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tvFrequency3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.50"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="Frequency "
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivFrequency3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llDays3"
+                        android:layout_width="100dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tvDays3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="0"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivDays3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Add More 4, 5, 6, 7 -->
+
+            <LinearLayout
+                android:id="@+id/llAddMore4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.40"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llMedicine4"
+                        android:layout_width="200dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/edtMedicine4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.50"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:text="Medicine four"
+                            android:background="@android:color/transparent"
+                            android:hint="Medicine "
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivMedicine4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llFrequency4"
+                        android:layout_width="200dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tvFrequency4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.50"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Frequency "
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivFrequency4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llDays4"
+                        android:layout_width="100dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tvDays4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:background="@android:color/transparent"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:hint="0"
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivDays4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+                    <!--  <TextView
+                          android:id="@+id/tvRemovell"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical"
+                          android:layout_marginLeft="10dp"
+                          android:textStyle="bold"
+                          android:textSize="30sp"
+                          android:visibility="gone"
+                          android:text="X"/>-->
+                </LinearLayout>
+            </LinearLayout>
+            <!--<include
+                android:id="@+id/ll4"
+                layout="@layout/advice_medicine_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />-->
+            <LinearLayout
+                android:id="@+id/llAddMore5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.40"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llMedicine5"
+                        android:layout_width="200dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/edtMedicine5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.50"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:text="Medicine five"
+                            android:background="@android:color/transparent"
+                            android:hint="Medicine "
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivMedicine5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llFrequency5"
+                        android:layout_width="200dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tvFrequency5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.50"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Frequency "
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivFrequency5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llDays5"
+                        android:layout_width="100dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tvDays5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:background="@android:color/transparent"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:hint="0"
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivDays5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+                    <!--  <TextView
+                          android:id="@+id/tvRemovell"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical"
+                          android:layout_marginLeft="10dp"
+                          android:textStyle="bold"
+                          android:textSize="30sp"
+                          android:visibility="gone"
+                          android:text="X"/>-->
+                </LinearLayout>
+            </LinearLayout>
+            <!--<include
+                android:id="@+id/ll5"
+                layout="@layout/advice_medicine_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />-->
+            <LinearLayout
+                android:id="@+id/llAddMore6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.40"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llMedicine6"
+                        android:layout_width="200dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/edtMedicine6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.50"
+                            android:gravity="center_vertical"
+                            android:text="Medicine six"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Medicine "
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivMedicine6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llFrequency6"
+                        android:layout_width="200dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tvFrequency6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.50"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Frequency "
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivFrequency6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llDays6"
+                        android:layout_width="100dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tvDays6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:background="@android:color/transparent"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:hint="0"
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivDays6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+                    <!--  <TextView
+                          android:id="@+id/tvRemovell"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical"
+                          android:layout_marginLeft="10dp"
+                          android:textStyle="bold"
+                          android:textSize="30sp"
+                          android:visibility="gone"
+                          android:text="X"/>-->
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<include
+                android:id="@+id/ll6"
+                layout="@layout/advice_medicine_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />-->
+            <LinearLayout
+                android:id="@+id/llAddMore7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.40"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llMedicine7"
+                        android:layout_width="200dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/edtMedicine7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.50"
+                            android:gravity="center_vertical"
+                            android:text="Medicine seven"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Medicine "
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivMedicine7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llFrequency7"
+                        android:layout_width="200dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tvFrequency7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.50"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Frequency "
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivFrequency7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llDays7"
+                        android:layout_width="100dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tvDays7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:background="@android:color/transparent"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:hint="0"
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivDays7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@mipmap/dropdown_arrow" />
+
+                    </LinearLayout>
+                    <!--  <TextView
+                          android:id="@+id/tvRemovell"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical"
+                          android:layout_marginLeft="10dp"
+                          android:textStyle="bold"
+                          android:textSize="30sp"
+                          android:visibility="gone"
+                          android:text="X"/>-->
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<include
+                android:id="@+id/ll7"
+                layout="@layout/advice_medicine_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />-->
+
+            <!--<include
+                android:id="@+id/ll8"
+                layout="@layout/advice_medicine_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />-->
+
+
+            <!-- Add More Button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/sixty_dp"
+                    android:layout_weight="1.40">
+
+                    <TextView
+                        android:id="@+id/tvAddMoreMedicine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:layout_marginRight="20dp"
+                        android:text="+ Add More"
+                        android:textSize="@dimen/twenty_two_sp" />
+
+                    <TextView
+                        android:id="@+id/tvRemoveMedicine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="- Remove Medicine"
+                        android:textSize="@dimen/twenty_two_sp"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.60"
+                    android:text="Rural Programme Doctors"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <TextView
+                    android:id="@+id/tvDoctorName"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/sixty_dp"
+                    android:layout_weight="1.40"
+                    android:background="@drawable/edittext_shape"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:hint="Enter Doctor"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <!--<LinearLayout
+                    android:id="@+id/llDoctorName"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/sixty_dp"
+                    android:layout_weight="1.40"
+                    android:background="@drawable/edittext_shape"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tvDoctorName"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:layout_weight="1.40"
+                        android:background="@drawable/edittext_shape"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:text="Select Doctor"
+                        android:textSize="@dimen/twenty_two_sp" />
+
+                    <ImageView
+                        android:id="@+id/ivDoctorName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.20"
+                        android:background="@mipmap/dropdown_arrow" />
+
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvDoctorComments"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:text="Dr's Comment "
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <EditText
+                    android:id="@+id/edtDoctorComment"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/sixty_dp"
+                    android:layout_weight="1.40"
+                    android:background="@drawable/edittext_shape"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:hint="Enter doctor comment"
+                    android:textSize="@dimen/twenty_two_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <Switch
+                    android:id="@+id/swFollowUp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1.30"
+                    android:checked="false"
+                    android:paddingTop="5dp"
+                    android:layout_gravity="center"
+                    android:text="Follow Up required"
+                    android:textSize="@dimen/twenty_two_sp"
+                    android:thumb="@drawable/customswitchselector"
+                    android:track="@drawable/custom_track" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llDuration"
+                        android:layout_width="150dp"
+                        android:layout_height="@dimen/sixty_dp"
+                        android:background="@drawable/edittext_shape"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tvDuration"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.50"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:text="Select ..."
+                            android:textSize="@dimen/twenty_two_sp" />
+
+                        <ImageView
+                            android:id="@+id/ivDuration"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:background="@mipmap/dropdown_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.90">
+
+                    <TextView
+                        android:id="@+id/tvDurationDate"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_shape"
+                        android:gravity="center_vertical"
+                        android:hint=" DD/MM/YYY "
+                        android:paddingLeft="10dp"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvReferred"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.60"
+                    android:text="Referred to(if applicable)"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <EditText
+                    android:id="@+id/edtReferredTo"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/sixty_dp"
+                    android:layout_weight="1.40"
+                    android:background="@drawable/edittext_shape"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:textSize="@dimen/twenty_two_sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/thirty_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/sixty_dp"
+                    android:layout_marginRight="@dimen/ten_dp"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:paddingBottom="@dimen/ten_dp"
+                    android:paddingLeft="@dimen/fivfty_dp"
+                    android:paddingRight="@dimen/fivfty_dp"
+                    android:paddingTop="@dimen/ten_dp"
+                    android:text="Submit "
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <Button
+                    android:id="@+id/btnPrint"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/sixty_dp"
+                    android:layout_marginRight="@dimen/ten_dp"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:paddingBottom="@dimen/ten_dp"
+                    android:paddingLeft="@dimen/fivfty_dp"
+                    android:paddingRight="@dimen/fivfty_dp"
+                    android:paddingTop="@dimen/ten_dp"
+                    android:text="Print"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twenty_two_sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

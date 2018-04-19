@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#187ab8</color>
+    <color name="colorPrimaryDark">#187ab8</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="dark_yellow">#ce9e25</color>
+    <color name="bw_light_black">#959595</color>
+    <color name="bw_red">#E33235</color>
+    <color name="bw_dark_black">#666666</color>
+    <color name="white">#ffffff</color>
+    <color name="bw_light_blue">#023f88</color>
+    <color name="blue">#187ab8</color>
+    <color name="gray">#fbb516</color>
+    <color name="new_followup">#fbb516</color>
+    <color name="font_color">#4f4f4f</color>
+    <color name="background_color">#EAEAEA</color>
+    <color name="black">#000000</color>
+
+</resources>

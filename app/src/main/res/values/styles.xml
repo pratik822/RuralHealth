@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LabelTextView">
+        <item name="android:textColor">@color/bw_light_black</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="RequiredLabelTextView">
+        <item name="android:textColor">@color/bw_red</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="ContentEditText">
+        <item name="android:textColor">@color/bw_dark_black</item>
+        <item name="android:textColorHint">@color/bw_light_black</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:background">@drawable/edit_text_selector</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+
+</resources>
